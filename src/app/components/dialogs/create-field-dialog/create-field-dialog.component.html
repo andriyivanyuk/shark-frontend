@@ -1,0 +1,21 @@
+<div class="dialog-wrapper">
+  <div mat-dialog-title>Додати нове поле</div>
+  <div [formGroup]="form">
+    <mat-dialog-content>
+      <mat-form-field>
+        <mat-label>Назва поля</mat-label>
+        <input matInput formControlName="fieldName" />
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button mat-raised-button (click)="onNoClick()">Cancel</button>
+      <button
+        mat-raised-button
+        [mat-dialog-close]="form.value"
+        [disabled]="form.invalid"
+      >
+        Ok
+      </button>
+    </mat-dialog-actions>
+  </div>
+</div>

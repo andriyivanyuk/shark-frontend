@@ -1,0 +1,21 @@
+.mat-sidenav {
+  width: 250px;
+  background-color: #285059;
+}
+
+:host ::ng-deep .mdc-list-item__primary-text {
+  color: white !important;
+}
+
+.mat-drawer {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.revert-icon {
+  cursor: pointer;
+}
+
+.mat-toolbar {
+  height: 50px;
+}

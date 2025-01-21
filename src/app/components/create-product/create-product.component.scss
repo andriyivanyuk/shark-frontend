@@ -1,0 +1,41 @@
+.product-form-container {
+  max-width: 800px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: #285059 !important;
+  color: white !important;
+}
+
+.header-title {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.main-file {
+  width: 175px;
+  cursor: pointer;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 1rem;
+}
