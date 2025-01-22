@@ -5,5 +5,5 @@ export interface Product {
   price: number;
   category: string;
   imagePath?: string;
-  customFields?: { [key: string]: string | number };
+  stock: number;
 }

@@ -1,10 +1,9 @@
 <mat-sidenav-container style="height: 100vh">
   <mat-sidenav #sidenav mode="side" opened="true">
     <mat-nav-list>
-      <mat-list-item>Панель управління</mat-list-item>
-      <mat-list-item routerLink="/create-product" routerLinkActive="active"
-        >Створити Продукт</mat-list-item
-      >
+      @for (item of navItems; track item.displayName) {
+      <app-menu-list-item [item]="item"></app-menu-list-item>
+      }
     </mat-nav-list>
   </mat-sidenav>
 
@@ -14,6 +13,10 @@
         >more_vert</i
       >
       <span style="flex: 1 1 auto"></span>
+      <button mat-raised-button color="warn" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        Вийти
+      </button>
     </mat-toolbar>
 
     <div style="padding: 20px">

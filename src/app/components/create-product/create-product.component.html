@@ -1,15 +1,6 @@
 <div class="product-form-container">
   <div class="header-wrapper">
     <p class="header-title">Створити продукт</p>
-    <div class="custom-field-button">
-      <button
-        mat-icon-button
-        matTooltip="Додати нове поле"
-        (click)="openDialog()"
-      >
-        <mat-icon>add</mat-icon>
-      </button>
-    </div>
   </div>
 
   <form [formGroup]="productForm" class="product-form">
@@ -29,16 +20,14 @@
     </mat-form-field>
 
     <mat-form-field appearance="fill">
+      <mat-label>Кількість на складі</mat-label>
+      <input matInput type="number" formControlName="stock" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
       <mat-label>Опис</mat-label>
       <textarea matInput formControlName="description"> </textarea>
     </mat-form-field>
-
-    @for (field of customFields; track field) {
-    <mat-form-field appearance="fill">
-      <mat-label>{{ field.name }}</mat-label>
-      <input matInput [formControlName]="field.name" />
-    </mat-form-field>
-    }
 
     <input
       class="main-file"
@@ -58,7 +47,7 @@
         type="submit"
         (click)="submitProduct()"
       >
-        Створити Продукт
+        Створити
       </button>
     </div>
   </form>

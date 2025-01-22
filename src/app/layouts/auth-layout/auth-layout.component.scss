@@ -1,10 +1,7 @@
 .mat-sidenav {
-  width: 250px;
+  width: 260px;
   background-color: #285059;
-}
-
-:host ::ng-deep .mdc-list-item__primary-text {
-  color: white !important;
+  padding: 0 5px;
 }
 
 .mat-drawer {

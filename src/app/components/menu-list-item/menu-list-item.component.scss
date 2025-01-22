@@ -1,0 +1,17 @@
+:host ::ng-deep .mdc-list-item__primary-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white !important;
+  column-gap: 12px;
+}
+
+.menu-list-item {
+  position: relative;
+}
+
+.icon-warapper {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
